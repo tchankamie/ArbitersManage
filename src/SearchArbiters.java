@@ -28,13 +28,6 @@ public class SearchArbiters extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        btn_add = new javax.swing.JButton();
-        btn_searchS = new javax.swing.JButton();
-        btn_deleteS = new javax.swing.JButton();
-        btn_updateS = new javax.swing.JButton();
-        btn_exit = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         btn_search = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -46,6 +39,12 @@ public class SearchArbiters extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
+        jPanel11 = new javax.swing.JPanel();
+        btn_add = new javax.swing.JButton();
+        btn_searchS = new javax.swing.JButton();
+        btn_deleteS = new javax.swing.JButton();
+        btn_updateS = new javax.swing.JButton();
+        btn_exit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1024, 720));
@@ -58,95 +57,6 @@ public class SearchArbiters extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("    Subject Management System");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
-
-        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btn_add.setBackground(new java.awt.Color(255, 255, 255));
-        btn_add.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btn_add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-add-property-80.png"))); // NOI18N
-        btn_add.setText("   Add Lesson");
-        btn_add.setBorder(null);
-        btn_add.setBorderPainted(false);
-        btn_add.setContentAreaFilled(false);
-        btn_add.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_add.setFocusPainted(false);
-        btn_add.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_addActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btn_add, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 100, 270, 60));
-
-        btn_searchS.setBackground(new java.awt.Color(255, 255, 255));
-        btn_searchS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btn_searchS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-search-database-80.png"))); // NOI18N
-        btn_searchS.setText("   Search Lesson");
-        btn_searchS.setBorder(null);
-        btn_searchS.setBorderPainted(false);
-        btn_searchS.setContentAreaFilled(false);
-        btn_searchS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_searchS.setFocusPainted(false);
-        btn_searchS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_searchSActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btn_searchS, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 190, 270, 80));
-
-        btn_deleteS.setBackground(new java.awt.Color(255, 255, 255));
-        btn_deleteS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btn_deleteS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-delete-bin-80.png"))); // NOI18N
-        btn_deleteS.setText("   Delete Lesson");
-        btn_deleteS.setBorder(null);
-        btn_deleteS.setBorderPainted(false);
-        btn_deleteS.setContentAreaFilled(false);
-        btn_deleteS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_deleteS.setFocusPainted(false);
-        btn_deleteS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_deleteSActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btn_deleteS, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 310, 250, 80));
-
-        btn_updateS.setBackground(new java.awt.Color(255, 255, 255));
-        btn_updateS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btn_updateS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update-left-rotation.png"))); // NOI18N
-        btn_updateS.setText("   Update Lesson");
-        btn_updateS.setBorder(null);
-        btn_updateS.setBorderPainted(false);
-        btn_updateS.setContentAreaFilled(false);
-        btn_updateS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_updateS.setFocusPainted(false);
-        btn_updateS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_updateSActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btn_updateS, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 210, 60));
-
-        btn_exit.setBackground(new java.awt.Color(255, 255, 255));
-        btn_exit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btn_exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-exit-80.png"))); // NOI18N
-        btn_exit.setText("        Exit");
-        btn_exit.setBorder(null);
-        btn_exit.setBorderPainted(false);
-        btn_exit.setContentAreaFilled(false);
-        btn_exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_exit.setFocusPainted(false);
-        btn_exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_exitActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btn_exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 510, 220, 60));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-home-50.png"))); // NOI18N
-        jLabel3.setText("      Home");
-        jPanel11.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 70));
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -165,7 +75,7 @@ public class SearchArbiters extends javax.swing.JFrame {
         jPanel4.add(btn_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(619, 15, 140, 50));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel2.setText("FIDE ID");
+        jLabel2.setText("Fide ID");
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 150, 40));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -213,7 +123,7 @@ public class SearchArbiters extends javax.swing.JFrame {
                     .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
                     .addComponent(jTextField2)
                     .addComponent(jTextField4))
-                .addContainerGap(159, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,8 +144,92 @@ public class SearchArbiters extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(226, Short.MAX_VALUE))
+                .addContainerGap(251, Short.MAX_VALUE))
         );
+
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_add.setBackground(new java.awt.Color(255, 255, 255));
+        btn_add.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btn_add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-add-property-80.png"))); // NOI18N
+        btn_add.setText("   Add Arbiter");
+        btn_add.setBorder(null);
+        btn_add.setBorderPainted(false);
+        btn_add.setContentAreaFilled(false);
+        btn_add.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_add.setFocusPainted(false);
+        btn_add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_addActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btn_add, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 30, 270, 80));
+
+        btn_searchS.setBackground(new java.awt.Color(255, 255, 255));
+        btn_searchS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btn_searchS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-search-database-80.png"))); // NOI18N
+        btn_searchS.setText("   Search Arbiter");
+        btn_searchS.setBorder(null);
+        btn_searchS.setBorderPainted(false);
+        btn_searchS.setContentAreaFilled(false);
+        btn_searchS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_searchS.setFocusPainted(false);
+        btn_searchS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_searchSActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btn_searchS, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 150, 270, 80));
+
+        btn_deleteS.setBackground(new java.awt.Color(255, 255, 255));
+        btn_deleteS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btn_deleteS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-delete-bin-80.png"))); // NOI18N
+        btn_deleteS.setText("   Delete Arbiter");
+        btn_deleteS.setBorder(null);
+        btn_deleteS.setBorderPainted(false);
+        btn_deleteS.setContentAreaFilled(false);
+        btn_deleteS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_deleteS.setFocusPainted(false);
+        btn_deleteS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_deleteSActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btn_deleteS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 250, 80));
+
+        btn_updateS.setBackground(new java.awt.Color(255, 255, 255));
+        btn_updateS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btn_updateS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update-left-rotation.png"))); // NOI18N
+        btn_updateS.setText("   Update Arbiter");
+        btn_updateS.setBorder(null);
+        btn_updateS.setBorderPainted(false);
+        btn_updateS.setContentAreaFilled(false);
+        btn_updateS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_updateS.setFocusPainted(false);
+        btn_updateS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_updateSActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btn_updateS, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 210, 60));
+
+        btn_exit.setBackground(new java.awt.Color(255, 255, 255));
+        btn_exit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btn_exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-exit-80.png"))); // NOI18N
+        btn_exit.setText("        Exit");
+        btn_exit.setBorder(null);
+        btn_exit.setBorderPainted(false);
+        btn_exit.setContentAreaFilled(false);
+        btn_exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_exit.setFocusPainted(false);
+        btn_exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_exitActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btn_exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 510, 220, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -245,31 +239,26 @@ public class SearchArbiters extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1080, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(7, 7, 7)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 780, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
@@ -309,6 +298,46 @@ public class SearchArbiters extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
+
+        close();
+
+        AddArbiter std = new AddArbiter();
+        std.setVisible(true);
+    }//GEN-LAST:event_btn_addActionPerformed
+
+    private void btn_searchSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchSActionPerformed
+
+        close();
+
+        SearchArbiters searchlsn = new SearchArbiters();
+        searchlsn.setVisible(true);
+    }//GEN-LAST:event_btn_searchSActionPerformed
+
+    private void btn_deleteSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteSActionPerformed
+
+        close();
+
+        DeleteArbiter deletestd = new DeleteArbiter();
+        deletestd.setVisible(true);
+    }//GEN-LAST:event_btn_deleteSActionPerformed
+
+    private void btn_updateSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_updateSActionPerformed
+
+        close();
+
+        EditArbiters updatestd = new EditArbiters();
+        updatestd.setVisible(true);
+    }//GEN-LAST:event_btn_updateSActionPerformed
+
     private void btn_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_exitActionPerformed
 
         int returnValue = 0;
@@ -317,45 +346,6 @@ public class SearchArbiters extends javax.swing.JFrame {
         if (returnValue == JOptionPane.YES_OPTION)
         System.exit(0);
     }//GEN-LAST:event_btn_exitActionPerformed
-
-    private void btn_updateSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_updateSActionPerformed
-
-        close();
-
-        EditLesson updatestd = new  EditLesson();
-        updatestd.setVisible(true);
-    }//GEN-LAST:event_btn_updateSActionPerformed
-
-    private void btn_deleteSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteSActionPerformed
-
-        close();
-
-        DeleteLesson deletestd = new   DeleteLesson();
-        deletestd.setVisible(true);
-    }//GEN-LAST:event_btn_deleteSActionPerformed
-
-    private void btn_searchSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchSActionPerformed
-
-        close();
-
-        searchStudent searchstd = new searchStudent();
-        searchstd.setVisible(true);
-    }//GEN-LAST:event_btn_searchSActionPerformed
-
-    private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
-
-        close();
-        AddLesson std = new AddLesson();
-        std.setVisible(true);
-    }//GEN-LAST:event_btn_addActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -402,7 +392,6 @@ public class SearchArbiters extends javax.swing.JFrame {
     private javax.swing.JButton btn_updateS;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

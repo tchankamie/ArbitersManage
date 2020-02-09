@@ -1,5 +1,4 @@
 
-import itp.studentDetails;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 

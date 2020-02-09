@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 
+
 /**
  *
  * @author thishantj
@@ -176,14 +177,29 @@ public class homePage extends javax.swing.JFrame {
         
         close();
 
-        studentDetails studentD = new studentDetails();  
-        studentD.setVisible(true);
+        AddArbiter std = new AddArbiter();
+        std.setVisible(true);
     }//GEN-LAST:event_btn_studentDetailsActionPerformed
 
     private void btn_staffAttendanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_staffAttendanceActionPerformed
         // TODO add your handling code here:
+        EditArbiters updatestd = new EditArbiters();
+        updatestd.setVisible(true);
     }//GEN-LAST:event_btn_staffAttendanceActionPerformed
+private void btn_btn_staffDetailsActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        
+        close();
 
+        DeleteArbiter deletestd = new DeleteArbiter();
+        deletestd.setVisible(true);
+}
+private void btn_btn_progressReportActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        
+        close();
+
+        SearchArbiters searchlsn = new SearchArbiters();
+        searchlsn.setVisible(true);
+    } 
     /**
      * @param args the command line arguments
      */

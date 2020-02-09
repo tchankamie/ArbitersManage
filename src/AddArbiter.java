@@ -30,10 +30,13 @@ public class AddArbiter extends javax.swing.JFrame {
         Container c=this.getContentPane();
         getContentPane().setLayout(new GridLayout(7,2));
         
-        jLabel4=new JLabel(" Code");
+               // jLable2=new JLable(" Fide ID");
+
+         jLabel4=new JLabel(" id");
         jLabel5=new JLabel(" Name");
-        jLabel6=new JLabel(" Credit");
-        jLabel7=new JLabel(" Max.Mark");
+       
+        jLabel6=new JLabel(" District");
+         jLabel7=new JLabel(" Details");
     }
 
     /**
@@ -48,13 +51,15 @@ public class AddArbiter extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         btn_add = new javax.swing.JButton();
         btn_searchS = new javax.swing.JButton();
@@ -82,11 +87,17 @@ public class AddArbiter extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setText("Fide ID");
+
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel5.setText("Arbiter Name");
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel6.setText("District");
+
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel7.setText("District");
+        jLabel7.setText("Details");
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +115,8 @@ public class AddArbiter extends javax.swing.JFrame {
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
+        jTextField7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton3.setText("SAVE");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -111,9 +124,6 @@ public class AddArbiter extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel8.setText("Fide ID");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -127,12 +137,14 @@ public class AddArbiter extends javax.swing.JFrame {
                 .addGap(80, 80, 80)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(127, 127, 127)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
                     .addComponent(jTextField5)
+                    .addComponent(jTextField7)
                     .addComponent(jTextField4))
                 .addContainerGap(178, Short.MAX_VALUE))
         );
@@ -140,18 +152,22 @@ public class AddArbiter extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(94, 94, 94)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(58, 58, 58)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(56, 56, 56)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
         );
@@ -214,7 +230,7 @@ public class AddArbiter extends javax.swing.JFrame {
         btn_updateS.setBackground(new java.awt.Color(255, 255, 255));
         btn_updateS.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btn_updateS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update-left-rotation.png"))); // NOI18N
-        btn_updateS.setText("   Update Arbiter");
+        btn_updateS.setText("   Update Lesson");
         btn_updateS.setBorder(null);
         btn_updateS.setBorderPainted(false);
         btn_updateS.setContentAreaFilled(false);
@@ -244,7 +260,7 @@ public class AddArbiter extends javax.swing.JFrame {
         jPanel11.add(btn_exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 510, 220, 60));
 
         getContentPane().add(jPanel11);
-        jPanel11.setBounds(10, 80, 250, 620);
+        jPanel11.setBounds(10, 80, 260, 590);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -290,11 +306,10 @@ public class AddArbiter extends javax.swing.JFrame {
 
     private void btn_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_exitActionPerformed
 
-        int returnValue = 0;
-        returnValue = JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION);
+         close();
 
-        if (returnValue == JOptionPane.YES_OPTION)
-        System.exit(0);
+       homePage updatestd = new homePage();
+        updatestd.setVisible(true);
     }//GEN-LAST:event_btn_exitActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
@@ -353,14 +368,16 @@ public class AddArbiter extends javax.swing.JFrame {
     private javax.swing.JButton btn_updateS;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }
