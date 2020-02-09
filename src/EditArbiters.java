@@ -269,7 +269,7 @@ public class EditArbiters extends javax.swing.JFrame {
 
         close();
 
-        SearchLesson1 searchlsn = new SearchLesson1();
+        SearchArbiters searchlsn = new SearchArbiters();
         searchlsn.setVisible(true);
     }//GEN-LAST:event_btn_searchSActionPerformed
 

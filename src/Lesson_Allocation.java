@@ -296,7 +296,7 @@ public class Lesson_Allocation extends javax.swing.JFrame {
 
         close();
 
-        AddLesson std = new  AddLesson ();
+        AddArbiter std = new  AddArbiter ();
         std.setVisible(true);
     }//GEN-LAST:event_btn_addActionPerformed
 
@@ -305,7 +305,7 @@ public class Lesson_Allocation extends javax.swing.JFrame {
         close();
 
 
-       SearchLesson1 searchlsn = new SearchLesson1();
+       SearchArbiters searchlsn = new SearchArbiters();
        searchlsn.setVisible(true);
     }//GEN-LAST:event_btn_searchSActionPerformed
 
@@ -313,7 +313,7 @@ public class Lesson_Allocation extends javax.swing.JFrame {
 
         close();
 
-        DeleteLesson deletestd = new  DeleteLesson();
+        DeleteArbiter deletestd = new  DeleteArbiter();
         deletestd.setVisible(true);
     }//GEN-LAST:event_btn_deleteSActionPerformed
 
@@ -321,7 +321,7 @@ public class Lesson_Allocation extends javax.swing.JFrame {
 
         close();
 
-       EditLesson updatestd = new EditLesson();
+       EditArbiters updatestd = new EditArbiters();
         updatestd.setVisible(true);
     }//GEN-LAST:event_btn_updateSActionPerformed
 
