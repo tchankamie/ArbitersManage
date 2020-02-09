@@ -261,7 +261,7 @@ public class EditLesson extends javax.swing.JFrame {
 
         close();
 
-        AddLesson std = new AddLesson();
+        AddArbiter std = new AddArbiter();
         std.setVisible(true);
     }//GEN-LAST:event_btn_addActionPerformed
 
@@ -277,7 +277,7 @@ public class EditLesson extends javax.swing.JFrame {
 
         close();
 
-        DeleteLesson deletestd = new DeleteLesson();
+        DeleteArbiter deletestd = new DeleteArbiter();
         deletestd.setVisible(true);
     }//GEN-LAST:event_btn_deleteSActionPerformed
 
