@@ -12,12 +12,12 @@ import java.awt.event.WindowEvent;
  *
  * @author Prabhasha
  */
-public class LessonMain extends javax.swing.JFrame {
+public class Tournamnt_Details extends javax.swing.JFrame {
 
     /**
      * Creates new form LessonMain
      */
-    public LessonMain() {
+    public Tournamnt_Details() {
         initComponents();
     }
 
@@ -32,8 +32,6 @@ public class LessonMain extends javax.swing.JFrame {
 
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -44,31 +42,10 @@ public class LessonMain extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1024, 720));
         getContentPane().setLayout(null);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Prabhasha\\Downloads\\icons8-ios-40.png")); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(760, 510, 50, 40);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Prabhasha\\Downloads\\icons8-home-page-40.png")); // NOI18N
+        jLabel3.setBounds(760, 510, 50, 0);
         getContentPane().add(jLabel2);
         jLabel2.setBounds(760, 160, 40, 40);
-
-        jButton2.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(204, 0, 51));
-        jButton2.setText("      Home");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(730, 150, 270, 60);
-
-        jButton1.setFont(new java.awt.Font("Thibus29STru", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(51, 0, 153));
-        jButton1.setText("Subject Management");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(730, 320, 270, 60);
 
         jButton3.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 153, 0));
@@ -83,14 +60,14 @@ public class LessonMain extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/classroom-kids-shutterstock-crop.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, -60, 1030, 850);
+        jLabel4.setBounds(30, 90, 980, 620);
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("    Subject Management System");
+        jLabel1.setText("    Arbiter Management System");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
 
         getContentPane().add(jPanel3);
@@ -103,15 +80,7 @@ public class LessonMain extends javax.swing.JFrame {
         WindowEvent closeEvent = new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
         
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(closeEvent);
-    } 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        close();
-
-        Subject_Allocation lesson= new Subject_Allocation();  
-        lesson.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-   
+    }    
       
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -136,27 +105,26 @@ public class LessonMain extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LessonMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tournamnt_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LessonMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tournamnt_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LessonMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tournamnt_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LessonMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tournamnt_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LessonMain().setVisible(true);
+                new Tournamnt_Details().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
